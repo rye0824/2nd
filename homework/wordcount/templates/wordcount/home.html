@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <title>wordcount</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+
+body{
+    background-color: #fcebe6;
+    background-image: "aaa.gif"
+
+}
+
+#box{
+    background-color: rgb(255, 202, 239);
+}
+
+h3{
+    color:rgb(255, 153, 179);
+}
+</style>
+
+
+</head>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<body>
+
+<center>
+<span style="color:rgb(248, 122, 170)"> <h1>WORDCOUNT</h1></span>
+<hr>
+<h3><div id="box">All of your word in your sentencee</div></h3>
+
+<br><br>
+<form action="{% url 'count' %}">
+    <textarea cols="50" rows="10" name="fulltext">
+    </textarea>
+    <br><br>
+    <button><input type="submit" value="Count!"/></button>
+</form>
+<br>
+<font size="3"color="yellow"><a href="{% url 'about' %}">옴팡이</a></font>
+<br>
+<br>
+<img src="https://scontent-sea1-1.cdninstagram.com/vp/7285578ca4466f4bedb38ba2ef3f1977/5D3E3013/t51.2885-15/e35/52482988_363810434207082_8843206970376450945_n.jpg?_nc_ht=scontent-sea1-1.cdninstagram.com&se=7&ig_cache_key=MTk4OTgzNjI5NzQzODgyNDM4OQ%3D%3D.2 "alt="옴팡이" height="200">
+</center>
+
+</body>
+
+</html>
